@@ -220,7 +220,72 @@ using System.Threading.Tasks;
 
 #region Task 5
 
+//string basePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "GameInfo");
+//Directory.CreateDirectory(basePath);
 
+//string recordFile = Path.Combine(basePath, "history.txt");
+//string bestScoreFile = Path.Combine(basePath, "best_score.txt");
 
+//Console.Write("Enter your name: ");
+//string playerName = Console.ReadLine();
 
+//Random rnd = new Random();
+//int secretNumber = rnd.Next(1, 101);
+//int attempts = 0;
+//int guess = 0;
+
+//Console.WriteLine("Guess the number between 1 and 100!");
+
+//while (guess != secretNumber)
+//{
+//    Console.Write("Guess: ");
+//    string input = Console.ReadLine();
+
+//    if (!int.TryParse(input, out guess))
+//    {
+//        Console.WriteLine("Error! Please enter a number.");
+//        continue;
+//    }
+
+//    attempts++;
+
+//    if (guess < secretNumber)
+//        Console.WriteLine("Higher!");
+//    else if (guess > secretNumber)
+//        Console.WriteLine("Lower!");
+//}
+
+//Console.WriteLine($"Congratulations! You found it in {attempts} attempts.");
+
+//string dateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+//string logEntry = $"{playerName} | {attempts} | {dateTime}";
+//File.AppendAllText(recordFile, logEntry + Environment.NewLine);
+
+//int currentBestScore = int.MaxValue;
+
+//if (File.Exists(bestScoreFile))
+//{
+//    string bestData = File.ReadAllText(bestScoreFile);
+//    if (!string.IsNullOrWhiteSpace(bestData))
+//    {
+//        string[] parts = bestData.Split('|');
+//        if (parts.Length > 1 && int.TryParse(parts[1].Trim(), out int savedScore))
+//        {
+//            currentBestScore = savedScore;
+//        }
+//    }
+//}
+
+//if (attempts < currentBestScore)
+//{
+//    File.WriteAllText(bestScoreFile, logEntry);
+//    Console.ForegroundColor = ConsoleColor.Green;
+//    Console.WriteLine("NEW BEST SCORE! Saved.");
+//    Console.ResetColor();
+//}
+//else
+//{
+//    Console.WriteLine($"Best score remains: {currentBestScore}");
+//}
 #endregion
